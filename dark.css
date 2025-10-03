@@ -1,0 +1,23 @@
+.theme-a {
+    background-color: blanchedalmond;
+    color: darkslateblue;
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-a {
+        background-color: black;
+        color: white;
+        outline: 5px dashed white;
+    }
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    outline: 5px dashed white;
+}
+
+.light {
+    background-color: blanchedalmond;
+    color: darkslateblue;
+}
