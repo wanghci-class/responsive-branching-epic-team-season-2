@@ -1,0 +1,47 @@
+.main-head {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+.side {
+    grid-area: sidebar;
+}
+
+.ad {
+    grid-area: ad;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+@media (width <=375px) {
+    .wrapper {
+        grid-template-areas:
+            "content";
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-head, .main-nav, .side, .ad, .main-footer {
+        display: none;
+    }
+
+}
